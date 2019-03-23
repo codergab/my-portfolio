@@ -390,9 +390,10 @@ body {
     // font-family: "Staatliches", cursive;
     background: hsla(198, 96%, 90%, 0.277);
     background-image: url('/assets/images/bg.svg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
+    background-position: center;
+    // overflow: hidden;
 }
 
 .backy {
@@ -421,10 +422,16 @@ body {
         padding: 0em 0em 0.5em 2.5em;
         font-size: 2rem;
         margin-top: -1em;
+    }
 
-        a {
-            color: #31006c;
-            text-decoration: overline;
-        }
+    h3.link {
+        color: #31006c;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+    }
+
+    h3.link:hover {
+        text-indent: 13px;
     }
 }

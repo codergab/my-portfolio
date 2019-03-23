@@ -345,9 +345,9 @@ template {
 body {
   background: rgba(205, 239, 254, 0.277);
   background-image: url("/assets/images/bg.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
+  background-position: center;
 }
 
 .backy {
@@ -379,8 +379,15 @@ body {
   margin-top: -1em;
 }
 
-.backy h3 a {
+.backy h3.link {
   color: #31006c;
-  text-decoration: overline;
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.backy h3.link:hover {
+  text-indent: 13px;
 }
 /*# sourceMappingURL=main.css.map */
